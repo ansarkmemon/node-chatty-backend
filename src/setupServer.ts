@@ -15,7 +15,6 @@ import { config } from '@root/config';
 import applicationRoutes from '@root/routes';
 import { CustomError, IErrorResponse } from '@global/helpers/error-handler';
 
-
 const SERVER_PORT = 5001;
 const log: Logger = config.createLogger('server');
 
@@ -115,6 +114,6 @@ export class ChattyServer {
   }
 
   private socketIOConnections(io: Server): void {
-    log.info(io.sockets);
+    log.info('socketIOConnections');
   }
 }
