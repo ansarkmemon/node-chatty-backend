@@ -113,7 +113,8 @@ export class ChattyServer {
     httpServer.listen(SERVER_PORT, () => log.info(`Listening on port ${SERVER_PORT}`));
   }
 
-  private socketIOConnections(io: Server): void {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  private socketIOConnections(_: Server): void {
     log.info('socketIOConnections');
   }
 }
